@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+boby{
+    background-color: rgb(158, 54, 54);
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(216, 30, 30);
+  text-shadow: 5px;
+}
+.head,.left-arm,.torso,.right-arm,.left-leg,.right-leg{
+    background-color: rgb(41, 189, 128);
+}
+.head{
+    height: 150px;
+    width: 200px;
+    border-radius: 50% 50% 0% 0%;
+    display: flex;
+    margin: 0% auto;
+    
+
+}
+.eye
+{
+    position: relative;
+    top:50px;
+}
+.left-eye,.right-eye
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(4, 5, 1);
+    display: inline-block;
+}
+.left-eye{
+    margin-left: 30px;
+}
+.right-eye{
+    margin-left: 90px;
+}
+.upper-body{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    margin: 0% auto;
+}
+
+.torso{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px 50px 50px 50px;
+}
+.left-arm,.right-arm{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+.left-arm{
+    margin-right: 10px;
+}
+.right-arm{
+    margin-left: 10px;
+}
+.lower-body{
+    width: 200px;
+    height: 200px;
+    margin: 0% auto;
+}
+.left-leg,.right-leg{
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+.left-leg{
+    margin-left: 45px;
+}
+.right-leg{
+    margin-left:30px ;
+}
+.robot:hover .head{
+    animation: movehead 2s infinite;
+}
+@keyframes movehead {
+    0%{
+        width: 200px;
+    }
+    25%{
+        width: 300px
+    }
+    50%{
+        width: 200px
+    }
+    75%{
+        width: 300px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.robot:hover .left-arm{
+    animation: moveleftarm 2s infinite;
+}
+@keyframes moveleftarm {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top-center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top-center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+.robot:hover .right-arm{
+    animation: moverightarm 2s infinite;
+}
+@keyframes moverightarm {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top-center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top-center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+.robot:hover .torso{
+    animation: movetorso 2s infinite;
+}
+@keyframes movetorso {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%{
+        transform: rotate(360deg);
+        transform-origin: top-center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%{
+        transform: rotate(360deg);
+        transform-origin: top-center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+.robot:hover .left-leg{
+    animation: moveleftleg 1s infinite;
+}
+@keyframes moveleftleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%{
+        transform: rotate(50deg);
+        transform-origin: top-center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%{
+        transform: rotate(50deg);
+        transform-origin: top-center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
+.robot:hover .right-leg{
+    animation: moverightleg 1s infinite;
+}
+@keyframes moverightleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    25%{
+        transform: rotate(-50deg);
+        transform-origin: top-center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+    75%{
+        transform: rotate(-50deg);
+        transform-origin: top-center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top-center;
+    }
+}
